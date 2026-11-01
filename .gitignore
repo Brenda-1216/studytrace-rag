@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+data/index/
+data/*.sqlite3*
+data/documents/*
+!data/documents/.gitkeep
+!data/documents/os_kaoyan/
+!data/documents/architecture_example.md
