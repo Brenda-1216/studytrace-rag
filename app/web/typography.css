@@ -1,0 +1,142 @@
+/* 阅读样式：优先使用系统中文黑体，不依赖在线字体或浏览器缩放。 */
+:root {
+  --font: "Microsoft YaHei", "微软雅黑", "PingFang SC", "Noto Sans CJK SC",
+          "SimHei", "黑体", system-ui, sans-serif;
+  --ink: #202e26;
+  --muted: #59675f;
+  --paper: #fcfdfb;
+  --line: #dce4db;
+}
+
+body { font-size: 16px; line-height: 1.6; }
+.sidebar { width: 280px; padding: 28px 20px 0; }
+.workspace { margin-left: 280px; }
+.brand { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+.brand-en { font-size: 10px; color: #627367; }
+.new-chat { font-size: 16px; font-weight: 600; padding: 14px 16px; margin: 28px 0; }
+.side-section { font-size: 14px; color: #58695c; letter-spacing: 0; }
+.side-section > span:last-child { font-size: 12px; }
+.empty-history { font-size: 14px; color: #647468; }
+.session-select { font-size: 15px; line-height: 1.7; padding: 13px 10px; }
+.session-select svg { width: 18px; height: 18px; color: #63765f; }
+.library-card strong { font-size: 15px; font-weight: 600; }
+.library-card p { font-size: 12px; color: #5c6d5f; line-height: 1.8; }
+.local-status { font-size: 12px; color: #5d6f60; }
+
+.topbar { height: 74px; min-height: 74px; padding-inline: 36px; }
+.breadcrumb { font-size: 14px; color: #627164; }
+.breadcrumb strong { font-weight: 600; color: #2b4232; }
+.status-badge { font-size: 12px; font-weight: 500; color: #3e623a; padding: 6px 12px; }
+.docs-link { font-size: 14px; color: #54694f; }
+
+.welcome { max-width: 1040px; padding: 40px 40px 24px; }
+.welcome-label { font-size: 14px; color: #53734f; letter-spacing: 1px; }
+.welcome h1 {
+  font-size: clamp(32px, 3vw, 42px);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .5px;
+  margin: 18px 0;
+}
+.welcome-description { font-size: 17px; line-height: 1.9; color: #506052; }
+.topics { font-size: 14px; color: #486241; margin: 22px 0 28px; }
+.topics .muted { color: #64715e; }
+.suggestion-label { font-size: 14px; color: #58694e; letter-spacing: 0; }
+.suggestions { gap: 16px; }
+.suggestion { padding: 20px; min-height: 156px; border-color: #d9e2d3; background: #fff; }
+.suggestion-icon { font-family: var(--font); font-size: 13px; font-weight: 600; color: #577a4a; margin-bottom: 18px; }
+.suggestion strong { font-size: 17px; font-weight: 600; margin-bottom: 8px; }
+.suggestion > span:last-of-type { font-size: 14px; line-height: 1.8; color: #586b4e; }
+.suggestion svg { width: 17px; height: 17px; color: #677f59; }
+.workflow { font-size: 13px; color: #5d7050; margin-top: 24px; }
+.workflow > span:nth-child(even) { color: #7c9070; }
+
+.composer-area { max-width: 1080px; padding: 14px 40px 16px; }
+.composer { padding: 18px 20px 14px; border-color: #c5d3be; box-shadow: 0 5px 24px #2e4a2110; }
+textarea { font-size: 17px; line-height: 1.8; color: #22382a; min-height: 60px; }
+textarea::placeholder { color: #6c7866; }
+.composer-info { font-size: 13px; color: #526849; gap: 8px; }
+.composer-info svg { width: 18px; height: 18px; color: #486b3b; }
+.composer-info select { font-size: 13px; color: #3c5c2f; padding: 4px 6px; }
+#input-hint { font-size: 12px; color: #69785e; }
+.send-button { width: 42px; height: 42px; }
+.send-button:disabled { background: #c3d0ba; }
+.send-button svg { width: 23px; height: 23px; }
+.stop-button { font-size: 14px; padding: 9px 13px; color: #405d34; }
+.footer-note { font-size: 12px; color: #63735a; line-height: 1.7; flex-wrap: wrap; }
+.notice { font-size: 14px; }
+
+.messages { max-width: 1040px; padding: 30px 40px 20px; }
+.message { margin-bottom: 32px; }
+.message-label { font-size: 14px; font-weight: 600; color: #4c6742; margin-bottom: 12px; }
+.message-label .assistant-icon { width: 28px; height: 28px; }
+.assistant-icon svg { width: 18px; height: 18px; }
+.message-body { font-size: 18px; line-height: 1.9; color: #27362b; }
+.message-body p { margin-bottom: 14px; }
+.message-body h3 { font-size: 20px; font-weight: 700; margin: 20px 0 12px; }
+.message-body code { font-size: 15px; }
+.user .message-body { padding: 14px 20px; background: #eaf0e4; }
+.citation { font-size: 13px; padding: 2px 6px; color: #2e5c29; }
+.message-state, .loading { font-size: 14px; color: #5d7452; }
+.message-state.failed { color: #965037; }
+.source-details > summary { font-size: 14px; font-weight: 500; color: #4b6a3e; padding: 4px 0; }
+.source-details summary > svg { width: 18px; height: 18px; }
+.source-card { padding: 16px 18px; background: #f7faf3; }
+.source-title { font-size: 15px; font-weight: 600; color: #3a5d2d; }
+.source-position { font-size: 13px; color: #5b7050; }
+.source-text { font-size: 15px; line-height: 1.9; color: #405237; max-height: 280px; }
+.retrieval-query { font-size: 13px; color: #5a6e4e; }
+
+@media (max-width: 1100px) {
+  .sidebar { width: 250px; padding-inline: 14px; }
+  .workspace { margin-left: 250px; }
+  .welcome, .messages { padding-inline: 28px; }
+  .welcome { padding-top: 32px; }
+  .welcome h1 { font-size: 34px; }
+  .suggestions { gap: 10px; }
+  .suggestion { padding: 17px 14px; }
+  .suggestion strong { font-size: 16px; }
+  .suggestion > span:last-of-type { font-size: 14px; }
+  .composer-area { padding-inline: 28px; }
+  .footer-note { font-size: 12px; }
+}
+
+@media (max-width: 760px) {
+  .sidebar { width: 280px; }
+  .workspace { margin-left: 0; }
+  .topbar { height: 66px; min-height: 66px; padding-inline: 16px; }
+  .breadcrumb { font-size: 13px; gap: 9px; }
+  .topbar-actions { gap: 10px; }
+  .status-badge { font-size: 11px; padding: 5px 8px; }
+  .docs-link { font-size: 12px; }
+  .welcome { padding: 30px 22px 24px; }
+  .welcome h1 { font-size: 32px; }
+  .welcome-description { font-size: 16px; }
+  .topics { font-size: 13px; gap: 10px; margin: 18px 0 24px; }
+  .topics .muted { padding-left: 10px; }
+  .suggestion { min-height: 96px; padding: 16px 35px 16px 48px; }
+  .suggestion-icon { top: 19px; left: 16px; }
+  .suggestion strong { font-size: 16px; }
+  .workflow { font-size: 12px; gap: 8px; }
+  .composer-area { padding: 10px 12px 12px; }
+  .composer { padding: 14px 12px 10px; }
+  textarea { font-size: 16px; min-height: 55px; }
+  .composer-toolbar { gap: 5px; }
+  .composer-info { font-size: 12px; gap: 5px; }
+  .composer-info select { font-size: 12px; padding-inline: 4px; }
+  .send-controls { gap: 5px; }
+  .send-button { width: 38px; height: 38px; }
+  .stop-button { font-size: 12px; padding-inline: 8px; }
+  .footer-note { font-size: 11px; }
+  .messages { padding: 24px 20px 14px; }
+  .message-body { font-size: 17px; }
+  .message-body h3 { font-size: 19px; }
+  .user .message-body { max-width: 94%; padding: 12px 15px; }
+}
+
+@media (max-width: 390px) {
+  .topbar-actions .docs-link { display: none; }
+  .topics .muted { border-left: 0; padding-left: 0; }
+  .workflow { font-size: 11px; gap: 5px; }
+  .composer-info .divider { margin-inline: 1px; }
+}
